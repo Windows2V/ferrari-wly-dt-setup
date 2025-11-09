@@ -13,6 +13,7 @@ rm -rf kernel/oneplus/sm8450-modules
 rm -rf kernel/oneplus/sm8450-devicetrees
 rm -rf hardware/oplus
 rm -rf hardware/qcom-caf/sm8450/display
+rm -rf hardware/pixelworks/interfaces
 
 #device-tree
 git clone https://github.com/pjgowtham/android_device_realme_ferrari.git -b lineage-23.0 device/realme/ferrari
@@ -31,6 +32,7 @@ git clone https://github.com/pjgowtham/android_kernel_oneplus_sm8450-devicetrees
 
 #hardware
 git clone https://github.com/pjgowtham/android_hardware_oplus.git -b lineage-23.0 hardware/oplus
+git clone https://github.com/pjgowtham/hardware_pixelworks_interfaces.git -b lineage-22.2 hardware/pixelworks/interfaces
  
 #fingerprint fix
 git clone https://github.com/WLYxFERRARI-Dev/android_hardware_qcom-caf_sm8450_display.git -b lineage-23.1 hardware/qcom-caf/sm8450/display
