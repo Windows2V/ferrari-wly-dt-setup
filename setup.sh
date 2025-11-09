@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 #make sure old trees are gone
 rm -rf device/realme/ferrari
@@ -10,7 +11,7 @@ rm -rf vendor/oneplus/sm8450-common
 rm -rf kernel/oneplus/sm8450
 rm -rf kernel/oneplus/sm8450-modules
 rm -rf kernel/oneplus/sm8450-devicetrees
-rm -rf hardware/oneplus
+rm -rf hardware/oplus
 rm -rf hardware/qcom-caf/sm8450/display
 
 #device-tree
@@ -29,7 +30,7 @@ git clone https://github.com/pjgowtham/android_kernel_oneplus_sm8450-modules.git
 git clone https://github.com/pjgowtham/android_kernel_oneplus_sm8450-devicetrees.git -b lineage-23.0 kernel/oneplus/sm8450-devicetrees
 
 #hardware
-git clone https://github.com/pjgowtham/android_hardware_oplus.git -b lineage-23.0 hardware/oneplus
+git clone https://github.com/pjgowtham/android_hardware_oplus.git -b lineage-23.0 hardware/oplus
  
 #fingerprint fix
 git clone https://github.com/WLYxFERRARI-Dev/android_hardware_qcom-caf_sm8450_display.git -b lineage-23.1 hardware/qcom-caf/sm8450/display
